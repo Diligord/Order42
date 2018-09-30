@@ -3,6 +3,7 @@ package com.order42.main;
 import java.awt.Canvas;
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
+import java.awt.Color;
 
 public class Game extends Canvas implements Runnable {
 	
@@ -71,6 +72,10 @@ public class Game extends Canvas implements Runnable {
 		}
 		
 		Graphics g = bs.getDrawGraphics();
+		
+		g.setColor(Color.green);
+		g.fillRect(0, 0, WIDTH, HEIGHT);
+		
 		g.dispose();
 		bs.show();
 	}
